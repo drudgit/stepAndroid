@@ -38,8 +38,11 @@
         android:id="@+id/login"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
+        android:onClick="log"
 
         android:text="login" />
+
+
 
 
 </LinearLayout>
