@@ -6,13 +6,13 @@ package com.example.log;
 public class Llist {
 
     private String name;
-    private String company;
+    private String director;
 
 
     public Llist(String name, String company){
 
         this.name=name;
-        this.company = company;
+        this.director = company;
 
     }
 
@@ -24,12 +24,12 @@ public class Llist {
         this.name = name;
     }
 
-    public String getCompany() {
-        return this.company;
+    public String getDirector() {
+        return this.director;
     }
 
     public void setCompany(String company) {
-        this.company = company;
+        this.director = company;
     }
 
 

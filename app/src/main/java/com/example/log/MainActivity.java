@@ -38,22 +38,16 @@ public class MainActivity extends AppCompatActivity {
             loget =  findViewById(R.id.logins);
 
 
-            set();
-           RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
+           // set();
+         //  RecyclerView recyclerView = findViewById(R.id.list);
 
-           Dapter adapter = new Dapter(this,phones);
-           recyclerView.setAdapter(adapter);
+        //   Dapter adapter = new Dapter(this,phones);
+         //  recyclerView.setAdapter(adapter);
 
         }
 
 
-    private void set(){
 
-        phones.add(new Llist ("Huawei P10", "Huawei"));
-        phones.add(new Llist ("Elite z3", "HP"));
-        phones.add(new Llist ("Galaxy S8", "Samsung"));
-        phones.add(new Llist ("LG G 5", "LG"));
-    }
 
 
         public void log(View v) {

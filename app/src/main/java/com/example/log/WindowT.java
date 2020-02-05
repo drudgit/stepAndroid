@@ -10,7 +10,7 @@ import java.util.List;
 
 public class WindowT extends AppCompatActivity {
 
-    List<Llist> phones = new ArrayList<>();
+    List<Llist> movie = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,18 +18,18 @@ public class WindowT extends AppCompatActivity {
         setContentView(R.layout.activity_window_t);
 
         set();
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
+        RecyclerView recyclerView =  findViewById(R.id.list);
 
-        Dapter adapter = new Dapter(this,phones);
+        Dapter adapter = new Dapter(this,movie);
         recyclerView.setAdapter(adapter);
     }
 
 
     private void set(){
 
-        phones.add(new Llist ("Huawei P10", "Huawei"));
-        phones.add(new Llist ("Elite z3", "HP"));
-        phones.add(new Llist ("Galaxy S8", "Samsung"));
-        phones.add(new Llist ("LG G 5", "LG"));
+        movie.add(new Llist ("Parasite", "Bong Joon-Ho"));
+        movie.add(new Llist ("Joker", "Todd Phillips"));
+        movie.add(new Llist ("Fight Club", "David Fincher"));
+        movie.add(new Llist ("Heat", "Michael Mann"));
     }
 }

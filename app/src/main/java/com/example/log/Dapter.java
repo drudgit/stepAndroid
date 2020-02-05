@@ -15,10 +15,10 @@ import java.util.List;
 public class Dapter extends RecyclerView.Adapter<Dapter.ViewHolder> {
 
     private LayoutInflater inflater;
-    private List<Llist> phones;
+    private List<Llist> movie;
 
     Dapter(Context context, List<Llist> phones) {
-        this.phones = phones;
+        this.movie = phones;
         this.inflater = LayoutInflater.from(context);
     }
     @Override
@@ -30,23 +30,23 @@ public class Dapter extends RecyclerView.Adapter<Dapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Llist phone = phones.get(position);
-        holder.nameView.setText(phone.getName());
-        holder.companyView.setText(phone.getCompany());
+        Llist mov = movie.get(position);
+        holder.nameView.setText(mov.getName());
+        holder.directorView.setText(mov.getDirector());
     }
 
     @Override
     public int getItemCount() {
-        return phones.size();
+        return movie.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView nameView, companyView;
+        final TextView nameView, directorView;
         ViewHolder(View view){
             super(view);
 
-            nameView = (TextView) view.findViewById(R.id.name);
-            companyView = (TextView) view.findViewById(R.id.company);
+            nameView =  view.findViewById(R.id.name);
+            directorView =  view.findViewById(R.id.director);
         }
     }
 }
